@@ -17,6 +17,7 @@ import Pricing from './pages/Pricing';
 import Reviews from './pages/Reviews';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import NoMatch from './pages/NoMatch';
 
 function App() {
   return (
@@ -45,11 +46,12 @@ function App() {
           <Route exact path="reviews" element={<Reviews />} />
           <Route exact path="about-us" element={<About />} />
           <Route exact path="contact" element={<Contact />} />
+          <Route path="*" element={<NoMatch />} />
           {/* <Route exact path="login" element={<Login />} /> */}
           {/* <Route exact path="new-item" element={<NewItemForm />} /> */}
           {/* <Route path="edit-item/:itemId" element={<EditItemForm />} /> */}
         </Routes>
-        <Home />
+        {/* <Home /> */}
       </Box>
     </ChakraProvider>
   );
