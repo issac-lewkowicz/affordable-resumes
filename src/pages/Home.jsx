@@ -14,7 +14,7 @@ function Home() {
   return (
     <>
     <VStack spacing={8}>
-              <Navbar/>
+              
             <Text>
               Welcome to Affordable Resumes!
             </Text>

@@ -6,18 +6,20 @@ import {
   theme,
   Flex,
   Spacer,
+  Text,
   Link,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
 import Home from './pages/Home';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Link as ReactRouterLink } from 'react-router-dom';
 import Services from './pages/Services';
 import Pricing from './pages/Pricing';
 import Reviews from './pages/Reviews';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import NoMatch from './pages/NoMatch';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
@@ -25,20 +27,16 @@ function App() {
       <Box textAlign="center" fontSize="xl">
         <Flex minH="10vh" p={3}>
         <Logo h="8vh" pointerEvents="none" />
-        <Spacer/>
-        {/* <Link
-              color="teal.500"
-              href="http://localhost:3000/"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-              Affordable Resumes
-            </Link> */}
-        <h1 fontSize="xxl">&nbsp;Affordable Resumes</h1>
+        <Spacer/> 
+        <Link  as={ReactRouterLink} to="/">
+              <Text fontSize="2xl" color='teal.500'>Affordable Resumes</Text>
+        </Link>
+        {/* <h1 fontSize="xxl">&nbsp;Affordable Resumes</h1> */}
         <Spacer/>
           <ColorModeSwitcher justifySelf="flex-end" />
         </Flex>
+        <Navbar/>
+        <br/>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="services" element={<Services />} />

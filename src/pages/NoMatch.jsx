@@ -21,7 +21,7 @@ function NoMatch() {
     // </Center>
     // </>
 
-      <Box class="col-sm-12 " textColor="red" fontWeight='bold' fontFamily='arvo' fontSize={28}
+      <Box textColor="red" fontWeight='bold' fontFamily='arvo' fontSize={28}
             backgroundImage={
               'https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif'
             }
