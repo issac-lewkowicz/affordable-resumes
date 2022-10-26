@@ -8,24 +8,18 @@ import {
   Grid,
 } from '@chakra-ui/react';
 import { Logo } from '../Logo';
+import Navbar from '../components/Navbar';
 
 function Home() {
   return (
+    <>
     <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
+              <Navbar/>
             <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
+              Welcome to Affordable Resumes!
             </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </Link>
           </VStack>
+    </>
   )
 }
 
