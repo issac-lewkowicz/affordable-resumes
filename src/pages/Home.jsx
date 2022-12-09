@@ -13,7 +13,7 @@ import Navbar from '../components/Navbar';
 function Home() {
   return (
     <>
-    <VStack spacing={8}>
+    <VStack spacing={8} fontSize="2xl">
               
             <Text>
               Welcome to Affordable Resumes!

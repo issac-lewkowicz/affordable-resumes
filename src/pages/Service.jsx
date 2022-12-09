@@ -26,11 +26,11 @@ function Service({item} ) {
   const {title, text} = item
   return (
     <AccordionItem>
-    <Heading fontSize="xl" >
+    <Heading  >
       <AccordionButton  _hover={{
               background: useColorModeValue('gray.100', 'gray.700'),
             }}>
-        <Box flex="1" textAlign="left">
+        <Box flex="1" textAlign="left" fontSize="lg" fontWeight="semibold">
           {title}
         </Box>
         <AccordionIcon />
