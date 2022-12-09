@@ -24,7 +24,7 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
+      <Box textAlign="center">
         <Flex minH="10vh" p={3}>
         <Logo h="8vh" pointerEvents="none" />
         <Spacer/> 
@@ -35,7 +35,7 @@ function App() {
         <Spacer/>
           <ColorModeSwitcher justifySelf="flex-end" />
         </Flex>
-        <Navbar/>
+        <Navbar />
         <br/>
         <Routes>
           <Route exact path="/" element={<Home />} />

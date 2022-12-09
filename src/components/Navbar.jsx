@@ -17,7 +17,7 @@ function Navbar() {
   let activeClassName = "underline";
 
   return (
-    <Grid templateColumns="repeat(6, 1fr)" gap={6}>
+    <Grid templateColumns="repeat(6, 1fr)" gap={6} fontSize="xl">
       <GridItem><NavLink to="/" end style={({ isActive }) => isActive ? activeStyle : undefined }>Home</NavLink></GridItem>
       <GridItem><NavLink to="/services" style={({ isActive }) => isActive ? activeStyle : undefined }>Services</NavLink></GridItem>
       <GridItem><NavLink to="/pricing" style={({ isActive }) => isActive ? activeStyle : undefined }>Pricing</NavLink></GridItem>
